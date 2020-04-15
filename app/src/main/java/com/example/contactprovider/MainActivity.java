@@ -36,9 +36,9 @@ public class MainActivity extends AppCompatActivity {
         while (cursor.moveToNext()){
             String nom = cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME));
             String tel = cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
-            contacts.add(nom+"\n\t\t\t\t"+tel);
+            contacts.add(nom+"\n"+tel);
         }
         lst = (ListView) findViewById(R.id.listContact);
-        lst.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,contacts));
+        lst.setAdapter(new ArrayAdapter<>(this, R.layout.card_contact,R.id.info_contact,contacts));
     }
 }
