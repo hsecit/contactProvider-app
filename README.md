@@ -1,7 +1,7 @@
 # contactProvider-app
 
 ## screen of the result
-![alt text](https://github.com/hsecit/contactProvider-app/blob/master/ressources_rapport/Capture.PNG "test the app")
+![alt text](https://github.com/hsecit/contactProvider-app/blob/master/ressources_rapport/ezgif.com-optimize.gif "test the app")
 ## code
 ```java
 public class MainActivity extends AppCompatActivity {
